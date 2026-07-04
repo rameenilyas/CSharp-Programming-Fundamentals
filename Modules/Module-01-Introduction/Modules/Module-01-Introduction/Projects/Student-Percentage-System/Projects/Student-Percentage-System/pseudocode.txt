@@ -1,0 +1,11 @@
+START
+
+INPUT name
+INPUT marks1 to marks5
+
+total = sum of marks
+percentage = (total / 500) * 100
+
+DISPLAY result
+
+END
