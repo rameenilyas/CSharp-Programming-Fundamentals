@@ -1,1 +1,13 @@
-START → Input → Calculate → Display → END
+[START]
+   ↓
+[Input Name]
+   ↓
+[Input 5 Subject Marks]
+   ↓
+[Calculate Total]
+   ↓
+[Calculate Percentage]
+   ↓
+[Display Result]
+   ↓
+[END]
