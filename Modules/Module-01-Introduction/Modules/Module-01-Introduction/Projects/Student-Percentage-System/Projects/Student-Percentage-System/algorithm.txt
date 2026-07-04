@@ -1,0 +1,7 @@
+1. Start
+2. Input name
+3. Input 5 marks
+4. Calculate total
+5. Calculate percentage
+6. Display result
+7. Stop
