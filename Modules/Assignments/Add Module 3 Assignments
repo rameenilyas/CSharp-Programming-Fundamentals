@@ -1,1 +1,74 @@
 
+# Module 3: Variables & Data Types — Assignment
+
+## Task 1: Student Information
+
+Write a C# program that stores and displays:
+
+- Student Name
+- Age
+- City
+- Marks
+- Grade
+
+Use appropriate data types for each value.
+
+---
+
+## Task 2: Data Types
+
+Create variables using:
+
+- int
+- float
+- double
+- char
+- bool
+- string
+
+Assign values and display them using `Console.WriteLine()`.
+
+---
+
+## Task 3: Constants
+
+Create a constant named `PI` and assign it the value `3.14`.
+
+Display the value of the constant.
+
+---
+
+## Task 4: Variable Naming
+
+Write five valid and five invalid variable names.
+
+Explain why the invalid names are not allowed.
+
+---
+
+## Task 5: Student Profile
+
+Create a C# program that displays the following:
+
+Name: Ali
+Age: 20
+City: Karachi
+Marks: 85.5
+Grade: A
+Passed: True
+
+Use the correct data type for every value.
+
+---
+
+## Task 6: Revision
+
+Answer the following questions:
+
+1. What is a variable?
+2. What is a constant?
+3. What is the difference between `int` and `double`?
+4. What is the difference between `char` and `string`?
+5. What values can a `bool` store?
+6. Why is `f` used with a float value?
+7. Is C# case-sensitive?
