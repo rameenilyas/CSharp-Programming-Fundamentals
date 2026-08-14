@@ -1,12 +1,3 @@
-Haan bilkul 👍 **pehle notes dalte hain**, code baad mein. 😄
-
-`Module-04-Operators` folder mein ek new file banao:
-
-```text
-Notes.md
-```
-
-Is mein ye notes paste karo:
 
 ````markdown
 # Module 4: Operators
