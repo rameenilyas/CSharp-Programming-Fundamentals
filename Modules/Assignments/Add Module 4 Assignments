@@ -1,0 +1,41 @@
+# Module 4 — Operators Assignment
+
+## Task 1 — Temperature Converter
+
+Write a C# program that takes a temperature in Celsius as input and converts it into Fahrenheit.
+
+**Formula:**
+
+Fahrenheit = (Celsius × 9 / 5) + 32
+
+---
+
+## Task 2 — Simple Calculator
+
+Write a C# program that takes two numbers as input and displays:
+
+* Addition
+* Subtraction
+* Multiplication
+* Division
+
+---
+
+## Task 3 — Age Calculator
+
+Write a C# program that takes the user's birth year as input and calculates their current age.
+
+---
+
+## Task 4 — Rectangle Properties
+
+Write a C# program that takes the length and width of a rectangle and calculates:
+
+* Area
+* Perimeter
+
+**Formulas:**
+
+Area = Length × Width
+
+Perimeter = 2 × (Length + Width)
