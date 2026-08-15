@@ -2,178 +2,182 @@
 ````markdown
 # Module 5: User Input & Output
 
-## 1. cin
+## 1. User Input
 
-`cin` ka use user se input lene ke liye hota hai.
+C# mein user se input lene ke liye `Console.ReadLine()` use hota hai.
 
 ### Syntax
 
-```cpp
-cin >> variable;
+```csharp
+Console.ReadLine();
 ````
 
 ### Example
 
-```cpp
-int age;
+```csharp
+Console.Write("Enter your name: ");
+string name = Console.ReadLine();
 
-cout << "Enter your age: ";
-cin >> age;
-
-cout << "Your age is: " << age;
+Console.WriteLine("Your name is: " + name);
 ```
 
 ### Explanation
 
-* `cin` → user se input leta hai.
-* `>>` → input ko variable mein store karta hai.
-* `age` → input store karne wala variable hai.
+* `Console.Write()` → message screen par display karta hai.
+* `Console.ReadLine()` → user se input leta hai.
+* `string name` → user ki input ko store karta hai.
 
 ---
 
-## 2. cout
+## 2. Output
 
-`cout` ka use screen par output display karne ke liye hota hai.
-
-### Syntax
-
-```cpp
-cout << value;
-```
+C# mein output display karne ke liye `Console.WriteLine()` use hota hai.
 
 ### Example
 
-```cpp
-int marks = 85;
-
-cout << marks;
-```
-
-### Output
-
-```text
-85
-```
-
-### Text + Variable
-
-```cpp
+```csharp
 int age = 20;
 
-cout << "Age: " << age;
+Console.WriteLine("Your age is: " + age);
 ```
 
 ### Output
 
 ```text
-Age: 20
+Your age is: 20
+```
+
+### `Console.Write()` vs `Console.WriteLine()`
+
+`Console.Write()` same line par output rakhta hai.
+
+```csharp
+Console.Write("Hello ");
+Console.Write("World");
+```
+
+Output:
+
+```text
+Hello World
+```
+
+`Console.WriteLine()` output ke baad next line par chala jata hai.
+
+```csharp
+Console.WriteLine("Hello");
+Console.WriteLine("World");
+```
+
+Output:
+
+```text
+Hello
+World
 ```
 
 ---
 
 ## 3. Multiple Inputs
 
-Multiple inputs ka matlab hai user se ek se zyada values lena.
+Jab program mein user se ek se zyada values leni hon, usay multiple inputs kehte hain.
 
 ### Example
 
-```cpp
-int age;
-int marks;
+```csharp
+Console.Write("Enter your name: ");
+string name = Console.ReadLine();
 
-cout << "Enter your age: ";
-cin >> age;
+Console.Write("Enter your age: ");
+int age = Convert.ToInt32(Console.ReadLine());
 
-cout << "Enter your marks: ";
-cin >> marks;
+Console.Write("Enter your marks: ");
+int marks = Convert.ToInt32(Console.ReadLine());
 
-cout << "Age: " << age << endl;
-cout << "Marks: " << marks;
+Console.WriteLine("Name: " + name);
+Console.WriteLine("Age: " + age);
+Console.WriteLine("Marks: " + marks);
 ```
 
-### Multiple Inputs in One Line
+### Explanation
 
-Hum ek hi `cin` statement mein bhi multiple values le sakte hain:
-
-```cpp
-int age;
-int marks;
-
-cin >> age >> marks;
-```
-
-Agar user enter kare:
-
-```text
-20 85
-```
-
-To:
-
-```text
-age = 20
-marks = 85
-```
+* `name` → string input store karta hai.
+* `age` → integer input store karta hai.
+* `marks` → integer input store karta hai.
+* `Convert.ToInt32()` → text input ko integer mein convert karta hai.
 
 ---
 
 ## 4. Formatting Output
 
-Formatting output ka matlab hai output ko clean aur readable way mein display karna.
-
-### Using `endl`
-
-`endl` output ko next line par move karta hai.
+Formatting output ka matlab hai information ko **clean aur readable format** mein display karna.
 
 ### Example
 
-```cpp
+```csharp
+string name = "Ramee";
 int age = 20;
 int marks = 85;
 
-cout << "Age: " << age << endl;
-cout << "Marks: " << marks << endl;
+Console.WriteLine("--- Student Information ---");
+Console.WriteLine("Name: " + name);
+Console.WriteLine("Age: " + age);
+Console.WriteLine("Marks: " + marks);
 ```
 
 ### Output
 
 ```text
+--- Student Information ---
+Name: Ramee
 Age: 20
 Marks: 85
 ```
 
-Without `endl`:
+---
 
-```cpp
-cout << "Age: " << age;
-cout << "Marks: " << marks;
+## 5. String Interpolation
+
+C# mein output ko aur clean banane ke liye **string interpolation** use kar sakte hain.
+
+Ismein `$` symbol use hota hai.
+
+### Example
+
+```csharp
+string name = "Ramee";
+int age = 20;
+
+Console.WriteLine($"Name: {name}");
+Console.WriteLine($"Age: {age}");
 ```
 
-Output:
+### Output
 
 ```text
-Age: 20Marks: 85
+Name: Ramee
+Age: 20
 ```
 
 ---
 
-## Important Operators
+## Important Methods
 
-| Operator | Meaning                                |
-| -------- | -------------------------------------- |
-| `>>`     | Input lena / variable mein store karna |
-| `<<`     | Output display karna                   |
-| `endl`   | Next line par jana                     |
+| Method                | Purpose                                 |
+| --------------------- | --------------------------------------- |
+| `Console.ReadLine()`  | User se input lena                      |
+| `Console.Write()`     | Output same line par display karna      |
+| `Console.WriteLine()` | Output display karke next line par jana |
+| `Convert.ToInt32()`   | Input ko integer mein convert karna     |
 
 ## Quick Summary
 
-* `cin` → Input 📥
-* `cout` → Output 📤
-* `>>` → Input ko variable mein store karta hai
-* `<<` → Output display karta hai
-* `endl` → Next line
-* Multiple `cin` values → `cin >> age >> marks;`
+* `Console.ReadLine()` → Input 📥
+* `Console.Write()` → Output same line par
+* `Console.WriteLine()` → Output + next line
+* `Convert.ToInt32()` → String input ko integer mein convert karta hai
+* `$"..."` → String interpolation ke liye
 
-```
+
 
 
