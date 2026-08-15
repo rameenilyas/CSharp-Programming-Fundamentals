@@ -4,7 +4,7 @@
 
 ## 1. User Input
 
-C# mein user se input lene ke liye `Console.ReadLine()` use hota hai.
+In C#, `Console.ReadLine()` is used to take input from the user.
 
 ### Syntax
 
@@ -23,15 +23,15 @@ Console.WriteLine("Your name is: " + name);
 
 ### Explanation
 
-* `Console.Write()` → message screen par display karta hai.
-* `Console.ReadLine()` → user se input leta hai.
-* `string name` → user ki input ko store karta hai.
+* `Console.Write()` displays a message on the screen.
+* `Console.ReadLine()` takes input from the user.
+* `string name` stores the user's input.
 
 ---
 
 ## 2. Output
 
-C# mein output display karne ke liye `Console.WriteLine()` use hota hai.
+In C#, `Console.WriteLine()` is used to display output on the screen.
 
 ### Example
 
@@ -47,9 +47,9 @@ Console.WriteLine("Your age is: " + age);
 Your age is: 20
 ```
 
-### `Console.Write()` vs `Console.WriteLine()`
+### Console.Write() vs Console.WriteLine()
 
-`Console.Write()` same line par output rakhta hai.
+`Console.Write()` displays output on the same line.
 
 ```csharp
 Console.Write("Hello ");
@@ -62,7 +62,7 @@ Output:
 Hello World
 ```
 
-`Console.WriteLine()` output ke baad next line par chala jata hai.
+`Console.WriteLine()` moves to the next line after displaying the output.
 
 ```csharp
 Console.WriteLine("Hello");
@@ -80,7 +80,7 @@ World
 
 ## 3. Multiple Inputs
 
-Jab program mein user se ek se zyada values leni hon, usay multiple inputs kehte hain.
+Multiple inputs means taking more than one value from the user.
 
 ### Example
 
@@ -101,16 +101,16 @@ Console.WriteLine("Marks: " + marks);
 
 ### Explanation
 
-* `name` → string input store karta hai.
-* `age` → integer input store karta hai.
-* `marks` → integer input store karta hai.
-* `Convert.ToInt32()` → text input ko integer mein convert karta hai.
+* `name` stores a string input.
+* `age` stores an integer input.
+* `marks` stores an integer input.
+* `Convert.ToInt32()` converts the input into an integer.
 
 ---
 
 ## 4. Formatting Output
 
-Formatting output ka matlab hai information ko **clean aur readable format** mein display karna.
+Output formatting means displaying information in a clean and readable way.
 
 ### Example
 
@@ -138,9 +138,9 @@ Marks: 85
 
 ## 5. String Interpolation
 
-C# mein output ko aur clean banane ke liye **string interpolation** use kar sakte hain.
+String interpolation is another way to display variables inside a string.
 
-Ismein `$` symbol use hota hai.
+It uses the `$` symbol.
 
 ### Example
 
@@ -163,21 +163,19 @@ Age: 20
 
 ## Important Methods
 
-| Method                | Purpose                                 |
-| --------------------- | --------------------------------------- |
-| `Console.ReadLine()`  | User se input lena                      |
-| `Console.Write()`     | Output same line par display karna      |
-| `Console.WriteLine()` | Output display karke next line par jana |
-| `Convert.ToInt32()`   | Input ko integer mein convert karna     |
+| Method                | Purpose                                    |
+| --------------------- | ------------------------------------------ |
+| `Console.ReadLine()`  | Takes input from the user                  |
+| `Console.Write()`     | Displays output on the same line           |
+| `Console.WriteLine()` | Displays output and moves to the next line |
+| `Convert.ToInt32()`   | Converts input to an integer               |
 
 ## Quick Summary
 
-* `Console.ReadLine()` → Input 📥
-* `Console.Write()` → Output same line par
-* `Console.WriteLine()` → Output + next line
-* `Convert.ToInt32()` → String input ko integer mein convert karta hai
-* `$"..."` → String interpolation ke liye
-
-
+* `Console.ReadLine()` → User Input
+* `Console.Write()` → Displays output on the same line
+* `Console.WriteLine()` → Displays output and moves to the next line
+* `Convert.ToInt32()` → Converts input into an integer
+* `$"..."` → Used for string interpolation
 
 
