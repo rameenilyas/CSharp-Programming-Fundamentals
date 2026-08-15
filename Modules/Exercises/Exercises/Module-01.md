@@ -1,62 +1,52 @@
-# 📝 Module 1 Exercises
+# Module 5: User Input & Output — Quiz
 
-## Exercise 1
-Define the following terms:
+## Question 1
 
-- Programming
-- Program
-- Programmer
+Which C# method is used to take input from the user?
 
----
+A) `Console.WriteLine()`
 
-## Exercise 2
-Write an algorithm for:
+B) `Console.Write()`
 
-1. Making Tea
-2. ATM Withdrawal
-3. Online Shopping
-4. Mobile Recharge
+C) `Console.Read()`
+
+D) `Console.ReadLine()`
 
 ---
 
-## Exercise 3
-Write pseudocode for:
+## Question 2
 
-1. Checking whether a number is Positive or Negative.
-2. Finding the Largest Number between two numbers.
-3. Calculating the Area of a Rectangle.
+Which method displays output and moves the cursor to the next line?
 
----
+A) `Console.ReadLine()`
 
-## Exercise 4
-Draw flowcharts for:
+B) `Console.Write()`
 
-1. Student Login System
-2. ATM Withdrawal
-3. Area of a Rectangle
-4. Even or Odd Number
+C) `Console.WriteLine()`
+
+D) `Convert.ToInt32()`
 
 ---
 
-## Exercise 5
-Answer the following questions:
+## Question 3
 
-1. What is Programming?
-2. What is a Program?
-3. What is an Algorithm?
-4. What is a Flowchart?
-5. What is Pseudocode?
-6. What is the difference between an Algorithm and a Flowchart?
-7. Why do we use Pseudocode?
+What is the purpose of `Console.Write()`?
+
+A) Takes input from the user
+
+B) Displays output on the same line
+
+C) Converts text into an integer
+
+D) Creates a variable
 
 ---
 
-## Challenge
+## Question 4
 
-Create your own:
+What will be the output of this code?
 
-- Algorithm
-- Flowchart
-- Pseudocode
+```csharp
+int age = 20;
 
-for a **Calculator**.
+Console.WriteLine("Age: " + age);
