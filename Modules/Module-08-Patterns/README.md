@@ -278,4 +278,23 @@ Outer Loop  → Rows
 Inner Loop  → Columns / Stars / Numbers
 Write()     → Same Line
 WriteLine() → New Line
-```
+
+
+
+
+
+---
+
+| Pattern           | Outer Loop | Inner Loop           |
+| ----------------- | ---------- | -------------------- |
+| Square            | Rows       | Same stars           |
+| Rectangle         | Rows       | Fixed columns        |
+| Right Triangle    | Rows       | `j <= i`             |
+| Inverted Triangle | `i--`      | `j <= i`             |
+| Number Pattern    | Rows       | Print `j`            |
+| Repeated Number   | Rows       | Print `i`            |
+| Alphabet Pattern  | Characters | Characters up to `i` |
+| Pyramid           | Rows       | Spaces + Stars       |
+
+
+
