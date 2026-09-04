@@ -1,47 +1,79 @@
-# Module 09 - Function-Based Calculator
 
-## Project Description
+using System;
 
-This project is a simple C# console calculator that uses functions to perform basic mathematical operations.
+class Program
+{
+    // Function to add two numbers
+    static int Add(int a, int b)
+    {
+        return a + b;
+    }
 
-## Features
+    // Function to subtract two numbers
+    static int Subtract(int a, int b)
+    {
+        return a - b;
+    }
 
-- Addition
-- Subtraction
-- Multiplication
-- Division
-- Menu-based system
-- User input
-- Functions with parameters
-- Functions with return values
-- Switch statement
-- Exit option
+    // Function to multiply two numbers
+    static int Multiply(int a, int b)
+    {
+        return a * b;
+    }
 
-## Learning Objectives
+    // Function to divide two numbers
+    static double Divide(int a, int b)
+    {
+        return (double)a / b;
+    }
 
-This project helps practice:
+    static void Main()
+    {
+        Console.WriteLine("===== Function Calculator =====");
 
-- Creating functions
-- Calling functions
-- Parameters
-- Arguments
-- Return values
-- `switch`
-- User input
-- Basic calculations
+        Console.Write("Enter first number: ");
+        int num1 = Convert.ToInt32(Console.ReadLine());
 
-## Example
+        Console.Write("Enter second number: ");
+        int num2 = Convert.ToInt32(Console.ReadLine());
 
-```text
-===== Function Calculator =====
-1. Addition
-2. Subtraction
-3. Multiplication
-4. Division
-5. Exit
+        Console.WriteLine("\nChoose an operation:");
+        Console.WriteLine("1. Addition");
+        Console.WriteLine("2. Subtraction");
+        Console.WriteLine("3. Multiplication");
+        Console.WriteLine("4. Division");
 
-Enter your choice: 1
-Enter first number: 10
-Enter second number: 5
+        Console.Write("Enter your choice: ");
+        int choice = Convert.ToInt32(Console.ReadLine());
 
-Result: 15
+        switch (choice)
+        {
+            case 1:
+                Console.WriteLine("Result: " + Add(num1, num2));
+                break;
+
+            case 2:
+                Console.WriteLine("Result: " + Subtract(num1, num2));
+                break;
+
+            case 3:
+                Console.WriteLine("Result: " + Multiply(num1, num2));
+                break;
+
+            case 4:
+                if (num2 != 0)
+                {
+                    Console.WriteLine("Result: " + Divide(num1, num2));
+                }
+                else
+                {
+                    Console.WriteLine("Cannot divide by zero.");
+                }
+                break;
+
+            default:
+                Console.WriteLine("Invalid choice.");
+                break;
+        }
+    }
+}
