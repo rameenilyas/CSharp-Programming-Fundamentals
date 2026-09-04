@@ -1,0 +1,48 @@
+
+# Module 09: Functions - Assignment
+
+## Task: Student Grade Calculator
+
+Create a C# console program using functions.
+
+### Requirements
+
+1. Create a function named `GetTotal`.
+   - It should receive three marks.
+   - It should return the total marks.
+
+2. Create a function named `GetAverage`.
+   - It should receive the total marks.
+   - It should return the average.
+
+3. Create a function named `CheckGrade`.
+   - It should receive the average.
+   - It should display the student's grade.
+
+### Grade Rules
+
+- 80–100 → A
+- 70–79 → B
+- 60–69 → C
+- 50–59 → D
+- Below 50 → F
+
+### Program Requirements
+
+- Take three marks from the user.
+- Use functions for calculations.
+- Use parameters and return values.
+- Display the total marks.
+- Display the average.
+- Display the grade.
+
+### Example Output
+
+```text
+Enter marks for Subject 1: 80
+Enter marks for Subject 2: 75
+Enter marks for Subject 3: 85
+
+Total Marks: 240
+Average: 80
+Grade: A
